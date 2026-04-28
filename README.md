@@ -3,9 +3,9 @@
 This project builds an object detection pipeline to identify baseballs in training videos using a Faster R-CNN model.
 
 ## Project Structure
-- annotations/ : XML annotation files
-- videos/ : raw video files
-- baseball_detection.ipynb : main notebook
+- annotations_final/ : XML annotation files
+- videos_final/ : raw video files
+- baseball_script.ipynb : main notebook
 
 ## How to Run
 1. Open the notebook
