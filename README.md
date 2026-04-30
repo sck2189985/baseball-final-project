@@ -1,15 +1,30 @@
-# Baseball Detection Project
+# ⚾ Baseball Detection Project
 
-This project builds an object detection pipeline to identify baseballs in training videos using a Faster R-CNN model.
+This project develops an object detection pipeline using Faster R-CNN to identify baseballs in training video frames. The main goal is to detect **moving baseballs** and create tight bounding boxes around them.
+
+## Project Overview
+
+This repository includes two model versions:
+
+1. **Baseline Model**  
+   The original Faster R-CNN pipeline for baseball detection.
+
+2. **Improved Model / Robustness Check**  
+   An improved Faster R-CNN model focused specifically on **moving baseball detection**, with stronger preprocessing, dataset construction, evaluation, and visualization.
 
 ## Project Structure
-- annotations_final/ : XML annotation files
-- videos_final/ : raw video files
-- baseball_script.ipynb : main notebook
 
-## How to Run
-1. Open the notebook
-2. Run all cells from top to bottom
+```text
+baseball-final-project/
+│
+├── annotations_final/                 # XML annotation files from CVAT
+├── videos_final/                      # Raw baseball training videos
+│
+├── baseball_script.ipynb              # Baseline model notebook
+├── baseball_improved_model.ipynb      # Improved Faster R-CNN robustness model
+│
+└── README.md                          # Project documentation
 
-## Note
-Training is demonstrated on a subset of the data to ensure the notebook runs efficiently on a local machine.
+## Note:
+
+Frames are extracted dynamically during execution and are not stored in the repository.
